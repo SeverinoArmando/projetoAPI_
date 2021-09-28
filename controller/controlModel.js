@@ -45,7 +45,7 @@ exports.cadastrar =(req,res)=>{
             res.send(erro)
         }
         else{
-            res.json(conteudo)
+            res.status(201).json({conteudo})
         }
     }
     )
